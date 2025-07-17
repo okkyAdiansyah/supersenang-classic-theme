@@ -136,3 +136,11 @@ function supersenang_theme_img_carousel_block_init() {
 	}
 }
 add_action( 'init', 'supersenang_theme_img_carousel_block_init' );
+
+function supersenang_booking_scripts(){
+	if ( is_page( 'booking' ) ) {
+		wp_enqueue_script( 'booking-script', get_template_directory_uri(  ) . '/assets/js/booking.js', array( 'jquery' ), wp_get_theme(  )->get( 'Version' ), true );
+	}
+}
+
+add_action( 'wp_enqueue_scripts', 'supersenang_booking_scripts' );

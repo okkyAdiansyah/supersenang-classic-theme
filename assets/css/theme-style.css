@@ -14,7 +14,7 @@
   --font-paragraph: 1.2rem;
   --font-title: 2.8rem;
   --font-cta: 1rem;
-  --font-header: 2rem;
+  --font-header: 1.6rem;
   /* Spaces */
   --block-padding: 2.4rem;
   --component-padding: 2.4rem;
@@ -354,8 +354,7 @@ textarea {
 
 /* Home Page */
 .ss-hero-banner--home {
-  background-image: url("../images/home/home-bg-replace.png");
-  background-size: auto !important;
+  background-image: url("../images/home/home-banner.jpg");
 }
 
 .ss-text-banner {
@@ -1133,6 +1132,17 @@ textarea {
   justify-content: center;
   row-gap: var(--gap);
 }
+.ss-hero-banner-container .ss-hero-content img {
+  width: 75px;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (min-width: 768px) {
+  .ss-hero-banner-container .ss-hero-content img {
+    width: 115px;
+  }
+}
 .ss-hero-banner-container .ss-hero-content .ss-header-highlight {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
@@ -1142,7 +1152,7 @@ textarea {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  width: 70%;
+  width: 80%;
   color: var(--text-light-color);
 }
 .ss-hero-banner-container .ss-hero-content .ss-header-highlight mark {
@@ -1413,4 +1423,190 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: var(--gap);
+}
+
+.box-be-custom {
+  padding: 24px 32px;
+  margin: 32px;
+  padding: 32px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 16px 30px #ebeef3;
+  border-radius: 0;
+  position: relative;
+  z-index: 9;
+  border: 1px solid #ebebeb;
+}
+
+.input-be {
+  width: 100%;
+  height: 42px;
+  border: 1px solid rgba(84, 89, 95, 0.168627451) !important;
+  padding: 0px 12px;
+  background-color: #fff;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  border-radius: 0px !important;
+}
+
+option {
+  color: #222;
+}
+
+input::-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 11px !important;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  font-size: 11px !important;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.btn-book-now {
+  color: #fff !important;
+  background-color: #FF6144 !important;
+  border: 1px solid var(--accent-color-1);
+  border-color: var(--accent-color-1);
+  border-radius: 0 !important;
+  padding: 5px 25px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 600 !important;
+  font-size: 13px;
+  line-height: 1.71428571em;
+  letter-spacing: 0.05em;
+  width: 100%;
+  height: 42px;
+  margin-top: 31px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 0px;
+}
+
+.btn-book-now:hover {
+  opacity: 0.8;
+  color: #fff !important;
+  background-color: #FF6144 !important;
+  border-color: var(--accent-color-1);
+}
+
+.center {
+  margin-top: 12px;
+}
+
+.flatpickr-calendar.animate.open {
+  z-index: 999999999999;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.pop-up-guest {
+  background-color: #fff;
+  margin: 4px;
+  padding: 8px 24px;
+  border: 1px solid #dee2e6;
+  width: 310px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.07);
+  display: none;
+  position: absolute;
+  left: 5px;
+  margin-top: 0;
+  z-index: 9;
+  transition: 0.3s ease-in-out;
+}
+
+.text-danger {
+  font-size: 13px;
+}
+
+.pop-up-guest .title {
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.pop-up-guest .description {
+  font-size: 13px;
+  font-weight: 100 !important;
+}
+
+.pop-up-guest .icon {
+  border: 1px solid #dee2e6;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.pop-up-guest .icon svg {
+  position: relative;
+  left: 4px;
+  top: 1.5px;
+  width: 26px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+p.bold.ml-2 {
+  position: relative;
+  left: 7px;
+  top: 4px;
+}
+
+.slim-grid-row {
+  margin-left: -8px !important;
+  margin-right: -8px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .pop-up-guest {
+    /*      left: -245px;*/
+    top: -70px;
+  }
+  .input-be {
+    margin-bottom: 12px;
+  }
+  .btn-book-now {
+    height: 48px !important;
+    margin-top: 6px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .pop-up-guest {
+    left: 4px;
+    top: -70px;
+  }
+  .box-be-custom {
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    top: 0 !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .input-be {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .pop-up-guest {
+    top: -150px;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .pop-up-guest {
+    left: -10px;
+  }
 }/*# sourceMappingURL=theme-style.css.map */

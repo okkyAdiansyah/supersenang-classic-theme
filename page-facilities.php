@@ -5,7 +5,7 @@
             <p class="ss-header-highlight">
                 We don’t do ordinary. From <mark>poolside sips to spa bliss</mark>, SUPERSENANG brings laid-back luxury to Balian—your way, all day.
             </p>        
-            <a href="#room-the-restaurant" class="ss-cta--underline ss-cta--90">
+            <a href="#facility-the-restaurant" class="ss-cta--underline ss-cta--90">
                 Explore
                 <svg
                     width="17"
