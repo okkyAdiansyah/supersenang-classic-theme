@@ -591,6 +591,21 @@ textarea {
   position: relative;
   z-index: 2;
 }
+.ss-single-container .ss-single-content-container .ss-content--isAvailable.ss-room {
+  display: grid;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .ss-single-container .ss-single-content-container .ss-content--isAvailable.ss-room {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    -moz-column-gap: 6.2rem;
+         column-gap: 6.2rem;
+    min-height: 100dvh;
+  }
+}
 @media screen and (min-width: 768px) {
   .ss-single-container .ss-single-content-container .ss-content--isAvailable {
     grid-template-columns: 50% 50%;
@@ -706,6 +721,18 @@ textarea {
 .ss-cta--box:hover {
   transform: scale(0.95);
   color: var(--accent-color-1);
+}
+
+.ss-content-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .ss-content-wrapper {
+    padding-inline: 2.4rem;
+    padding-block: 2rem;
+  }
 }
 
 /* Faq */
@@ -1425,17 +1452,27 @@ textarea {
   gap: var(--gap);
 }
 
+.ss-booking-container {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .ss-booking-container {
+    grid-column: 1/span 2;
+  }
+}
+
 .box-be-custom {
-  padding: 24px 32px;
-  margin: 32px;
-  padding: 32px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 16px 30px #ebeef3;
-  border-radius: 0;
+  width: 100%;
+  padding-block: 1rem 3.2rem;
+  padding-inline: 2.4rem;
+  background-color: transparent;
   position: relative;
   z-index: 9;
-  border: 1px solid #ebebeb;
+}
+@media screen and (min-width: 768px) {
+  .box-be-custom {
+    width: calc(100% - 8.6rem);
+  }
 }
 
 .input-be {
@@ -1464,6 +1501,12 @@ input::placeholder {
 }
 
 label {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: var(--font-paragraph);
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: var(--text-light-color);
   font-size: 14px;
   margin-bottom: 8px;
 }

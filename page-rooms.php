@@ -65,7 +65,7 @@
                                 />
                             </svg>
                         </a>
-                        <a target="_blank" href="<?= esc_url( get_field( 'booking_link' ) ); ?>" class="ss-cta--underline">
+                        <a target="_blank" href="<?= esc_url( get_the_permalink(  ) ); ?>" class="ss-cta--underline">
                             Book this room
                             <svg
                                 width="17"

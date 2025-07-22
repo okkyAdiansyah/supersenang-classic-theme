@@ -38,7 +38,7 @@
                     endif;
                 ?>
             </ul>
-            <a href="/booking" target="_blank" class="ss-cta--box">
+            <a href="/rooms" target="_blank" class="ss-cta--box">
                 Book Now
             </a>
             <div id="nav-toggle" class="ss-nav-toggle">

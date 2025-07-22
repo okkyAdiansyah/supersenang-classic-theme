@@ -1,6 +1,5 @@
-let $ = jquery;
+let $ = jQuery;
 
-window.addEventListener( 'DOMContentLoaded', () => {
     // Array yang berisi objek
     var merchantList = [
         { name: '', code: '' },
@@ -163,4 +162,3 @@ window.addEventListener( 'DOMContentLoaded', () => {
     window.HidePopUp = HidePopUp;
     window.WarningCheckIn = WarningCheckIn;
     window.WarningCheckOut = WarningCheckOut;
-} );
